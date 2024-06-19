@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+    <section class="container">
+        <h1 id="title" onclick="refreshPage()">Rock Paper Scissors!</h1>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <p class="choice" id="rock" onclick="getChoice(this)">🪨</p>
+            </div>
+            <div class="choice grid-item" id="paper">
+                <p class="choice" id="paper" onclick="getChoice(this)">📃</p>
+            </div>
+            <div class="choice grid-item" id="scissor">
+                <p class="choice" id="scissor" onclick="getChoice(this)">✂️</p>
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <div class="score">
+                <p id="user">0</p>
+                <p id="name">You</p>
+            </div>
+            <div class="score">
+                <p id="comp">0</p>
+                <p id="name">Computer</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <p id="result">Play your move!</p>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
